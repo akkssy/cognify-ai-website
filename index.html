@@ -530,7 +530,7 @@
             <p class="hero-tagline">Code Cognition — Your Local AI-Powered Code Assistant</p>
             <p class="hero-description">
                 A powerful CLI tool that brings AI-powered code cognition to your terminal.<br>
-                Review code, generate functions, search semantically, and refactor projects—all running <strong>locally</strong> with Ollama.
+                Review code, generate functions, search semantically, refactor projects, and interact with an AI code agent—all running <strong>locally</strong> with Ollama.
             </p>
             <div class="hero-buttons">
                 <a href="#installation" class="btn btn-primary">🚀 Get Started</a>
@@ -588,6 +588,16 @@
                     <div class="feature-icon">📊</div>
                     <h3>Codebase Indexing</h3>
                     <p>Create a searchable semantic index of your codebase. Enables fast, intelligent code discovery and context retrieval.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Code Agent</h3>
+                    <p>Interactive agent that understands your intent. Generate, review, edit, explain, and refactor code with natural language commands.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔮</div>
+                    <h3>Intent Classification</h3>
+                    <p>Smart intent detection automatically routes your requests to the right handler—generate, review, edit, explain, or refactor.</p>
                 </div>
             </div>
         </div>
@@ -693,6 +703,15 @@
                     </div>
                     <div class="code-block">
                         <code><span class="comment"># Rename a function</span><br><span class="command">ai-assist rename</span> old_func new_func --type function<br><br><span class="comment"># Rename a class</span><br><span class="command">ai-assist rename</span> MyClass BetterClass --type class</code>
+                    </div>
+                </div>
+                <div class="usage-card">
+                    <div class="usage-card-header">
+                        <span>🤖</span>
+                        <h3>AI Code Agent</h3>
+                    </div>
+                    <div class="code-block">
+                        <code><span class="comment"># Start interactive agent</span><br><span class="command">ai-assist agent</span><br><br><span class="comment"># Quick commands</span><br><span class="command">ai-assist agent-review</span> src/main.py<br><span class="command">ai-assist agent-generate</span> "email validator"<br><span class="command">ai-assist agent-explain</span> config.py</code>
                     </div>
                 </div>
             </div>

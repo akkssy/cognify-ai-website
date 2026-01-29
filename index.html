@@ -342,6 +342,20 @@
             margin-bottom: 16px;
         }
 
+        .step-note {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 8px;
+            margin-bottom: 4px;
+        }
+
+        .step-note code {
+            background: rgba(165, 243, 252, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
         /* Code Blocks */
         .code-block {
             background: var(--code-bg);
@@ -616,35 +630,36 @@
                         <h3>Install Ollama</h3>
                         <p>Download and install Ollama from the official website to run LLMs locally.</p>
                         <div class="code-block">
-                            <code><span class="comment"># Download from https://ollama.ai</span><br><span class="command">ollama pull deepseek-coder:6.7b</span></code>
+                            <code><span class="comment"># Download from https://ollama.ai</span><br><span class="command">ollama pull</span> deepseek-coder:6.7b</code>
                         </div>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3>Clone & Install</h3>
-                        <p>Clone the repository and install the package in a virtual environment.</p>
+                        <h3>Install Cognify AI</h3>
+                        <p>Install directly from PyPI with a single command. No cloning required!</p>
                         <div class="code-block">
-                            <code><span class="command">git clone</span> https://github.com/akkssy/cognify-ai.git<br><span class="command">cd</span> cognify-ai<br><span class="command">python -m venv</span> .venv<br><span class="command">source</span> .venv/bin/activate<br><span class="command">pip install -e</span> .</code>
+                            <code><span class="command">pip install</span> cognify-ai</code>
                         </div>
+                        <p class="step-note">💡 For Google Gemini support: <code>pip install cognify-ai[google]</code></p>
+                        <p class="step-note">💡 For Groq support: <code>pip install cognify-ai[groq]</code></p>
+                        <p class="step-note">💡 For all providers: <code>pip install cognify-ai[all-providers]</code></p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3>Verify Installation</h3>
-                        <p>Check that everything is working correctly.</p>
+                        <h3>Start Using</h3>
+                        <p>You're ready! Use either <code>cognify</code> or <code>ai-assist</code> command.</p>
                         <div class="code-block">
-                            <code><span class="command">ai-assist</span> status</code>
+                            <code><span class="command">cognify</span> status<br><span class="comment"># or</span><br><span class="command">ai-assist</span> review myfile.py</code>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Usage Section -->
     <section id="usage" class="usage">
         <div class="container">
             <h2 class="section-title">📖 Usage Examples</h2>

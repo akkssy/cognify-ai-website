@@ -517,10 +517,11 @@
 <body>
     <nav>
         <div class="container">
-            <a href="#" class="logo">🧠 Cognify AI</a>
+            <a href="#" class="logo">🧠 Cognify Code</a>
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#installation">Installation</a></li>
+                <li><a href="#vscode">VSCode</a></li>
                 <li><a href="#usage">Usage</a></li>
                 <li><a href="#tech">Tech Stack</a></li>
             </ul>
@@ -538,16 +539,18 @@
     <section class="hero">
         <div class="container">
             <div class="hero-badge">
-                <span>✨ 100% Local & Private</span> — No API keys required
+                <span>✨ Model-Agnostic</span> — Local or Cloud, Your Choice
             </div>
-            <h1 class="hero-title">🧠 Cognify AI</h1>
-            <p class="hero-tagline">Code Cognition — Your Local AI-Powered Code Assistant</p>
+            <h1 class="hero-title">🧠 Cognify Code</h1>
+            <p class="hero-tagline">Code Cognition — AI-Powered Code Assistant for CLI & VSCode</p>
             <p class="hero-description">
-                A powerful CLI tool that brings AI-powered code cognition to your terminal.<br>
-                Review code, generate functions, search semantically, refactor projects, and interact with an AI code agent—all running <strong>locally</strong> with Ollama.
+                A powerful code assistant available as both <strong>CLI tool</strong> and <strong>VSCode extension</strong>.<br>
+                Review code, generate functions, search semantically, and refactor projects with an <strong>intelligent multi-agent system</strong>.<br>
+                Run locally with <strong>Ollama</strong> or connect to <strong>Groq, Google AI, OpenAI</strong>, and more.
             </p>
             <div class="hero-buttons">
                 <a href="#installation" class="btn btn-primary">🚀 Get Started</a>
+                <a href="#vscode" class="btn btn-secondary">🖥️ VSCode Extension</a>
                 <a href="https://github.com/akkssy/cognify-ai" class="btn btn-secondary" target="_blank">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                     View on GitHub
@@ -612,6 +615,26 @@
                     <div class="feature-icon">🔮</div>
                     <h3>Intent Classification</h3>
                     <p>Smart intent detection automatically routes your requests to the right handler—generate, review, edit, explain, or refactor.</p>
+                </div>
+                <div class="feature-card" style="border: 2px solid var(--primary);">
+                    <div class="feature-icon">🖥️</div>
+                    <h3>VSCode Extension</h3>
+                    <p>Full IDE integration with sidebar chat, quick actions, and context-aware assistance. No need to leave your editor!</p>
+                </div>
+                <div class="feature-card" style="border: 2px solid var(--primary);">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Multi-Agent System</h3>
+                    <p>5 specialized agents (Generator, Reviewer, Tester, Documenter, General) that auto-select based on your message and collaborate via handoffs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📡</div>
+                    <h3>Streaming Responses</h3>
+                    <p>Real-time token-by-token responses with blinking cursor. See AI thinking as it writes—no more waiting for complete responses.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Multi-Provider Support</h3>
+                    <p>Choose your LLM: Ollama (local), Groq, Google AI, OpenAI, Cerebras, or OpenRouter. Free tiers available for most providers.</p>
                 </div>
             </div>
         </div>
@@ -733,6 +756,74 @@
         </div>
     </section>
 
+    <!-- VSCode Extension Section -->
+    <section id="vscode" class="installation">
+        <div class="container">
+            <h2 class="section-title">🖥️ VSCode Extension</h2>
+            <p class="section-subtitle">Bring AI-powered code assistance directly into your favorite IDE with our powerful sidebar chat.</p>
+
+            <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px;">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>5 Specialized Agents</h3>
+                    <p><strong>⚡ Generator</strong> - Code creation<br>
+                    <strong>💬 General</strong> - Questions & help<br>
+                    <strong>🔍 Reviewer</strong> - Code analysis<br>
+                    <strong>📝 Documenter</strong> - Documentation<br>
+                    <strong>🧪 Tester</strong> - Unit tests</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Auto Agent Selection</h3>
+                    <p>The system analyzes your message and automatically picks the best agent. Say "review this code" and it switches to Code Reviewer. Say "write tests" and it switches to Test Writer.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Agent Handoffs</h3>
+                    <p>Agents collaborate! After Code Reviewer finds issues, it suggests switching to Generator for fixes. After Generator creates code, it suggests Tester for coverage.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📡</div>
+                    <h3>Streaming Chat</h3>
+                    <p>See responses appear token-by-token with a blinking cursor. Context-aware conversations that remember your history. Retry button on errors.</p>
+                </div>
+            </div>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Install CLI First</h3>
+                        <p>The VSCode extension requires the CLI to be installed.</p>
+                        <div class="code-block">
+                            <code><span class="command">pip install</span> cognify-code</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Install Extension</h3>
+                        <p>Build from source or download the VSIX file.</p>
+                        <div class="code-block">
+                            <code><span class="comment"># Build from source</span><br><span class="command">cd</span> vscode-extension && npm run package<br><span class="command">code --install-extension</span> cognify-code-1.0.0.vsix</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Start Chatting</h3>
+                        <p>Click the Cognify icon in the sidebar and start asking questions!</p>
+                        <div class="code-block">
+                            <code><span class="comment"># Example messages</span><br>"Create a binary search function"<br>"Review this code for bugs"<br>"Write unit tests for this class"</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Tech Stack Section -->
     <section id="tech" class="tech-stack">
         <div class="container">
@@ -748,6 +839,8 @@
                 <div class="tech-item">✨ Rich</div>
                 <div class="tech-item">📋 Pydantic</div>
                 <div class="tech-item">🧪 Pytest</div>
+                <div class="tech-item">📘 TypeScript</div>
+                <div class="tech-item">🖥️ VSCode API</div>
             </div>
         </div>
     </section>
@@ -755,15 +848,16 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <a href="#" class="logo">🧠 Cognify AI</a>
-            <p>Code Cognition — Your Local AI-Powered Code Assistant</p>
-            <p style="font-size: 0.9rem;">Made with ❤️ for developers who value privacy and local AI</p>
+            <a href="#" class="logo">🧠 Cognify Code</a>
+            <p>Code Cognition — AI-Powered Code Assistant for CLI & VSCode</p>
+            <p style="font-size: 0.9rem;">Made with ❤️ for developers who want flexibility and control</p>
             <div class="links">
                 <a href="https://github.com/akkssy/cognify-ai" target="_blank">GitHub</a>
                 <a href="https://github.com/akkssy/cognify-ai#installation" target="_blank">Documentation</a>
                 <a href="https://github.com/akkssy/cognify-ai/issues" target="_blank">Issues</a>
                 <a href="https://github.com/akkssy/cognify-ai/blob/main/LICENSE" target="_blank">MIT License</a>
             </div>
+            <p style="font-size: 0.8rem; margin-top: 16px; opacity: 0.7;">v1.0.0 • Multi-Agent System • Streaming • VSCode Extension</p>
         </div>
     </footer>
 
